@@ -1,8 +1,8 @@
 // Allen ISD Computer Science Assignment
 // Integer Properties Project
-// John Williams
-// Computer Science I, Period 1
-// 2018.01.21
+// Angela Liu
+// Computer Science I, Period 3
+// 2018.01.24
 
 
 /* This program will print many properties for an integer specified on the command line.
@@ -43,3 +43,50 @@
 
 
  */
+
+let parameter  = CommandLine.arguments[1]
+let integer = Int(parameter)!
+
+print("The number is even:")
+print(integer % 2 == 0)
+print("The number is odd")
+print(integer % 2 == 1)
+print("The number is evenly divisible by three")
+print(integer % 3 == 0)
+print("The number is evenly divisible by five")
+print(integer % 5 == 0)
+print("The number is evenly divisible by seven")
+print(integer % 7 == 0)
+print("How many groups of ten?")
+print("How many groups of hundreds?")
+print("The additive inverse")
+print(-integer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
