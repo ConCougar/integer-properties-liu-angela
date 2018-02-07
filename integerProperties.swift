@@ -46,17 +46,19 @@
 
 let parameter  = CommandLine.arguments[1]
 let integer = Int(parameter)!
-
+func isEvenlyDivisible(number:Int, by:Int) -> Bool {
+        return number % by == 0
+}   
 print("The number is even:")
-print(integer % 2 == 0)
+print(isEvenlyDivisible(number:integer, by:2))
 print("The number is odd")
-print(integer % 2 == 1)
-print("The number is evenly divisible by three")
-print(integer % 3 == 0)
+print(!isEvenlyDivisible(number:integer, by:2))
+print("The number is even;y divisible by three")
+print(isEvenlyDivisible(number:integer, by:3))
 print("The number is evenly divisible by five")
-print(integer % 5 == 0)
+print(isEvenlyDivisible(number:integer, by:5))
 print("The number is evenly divisible by seven")
-print(integer % 7 == 0)
+print(isEvenlyDivisible(number:integer, by:7))
 print("How many groups of ten?")
 print(integer / 10)
 print("How many groups of hundreds?")
@@ -65,11 +67,7 @@ print("The additive inverse")
 print(-integer)
 
 
-
-
-
-
-
+   
 
 
 
