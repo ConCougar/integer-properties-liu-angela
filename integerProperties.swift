@@ -64,7 +64,7 @@ print(integer / 10)
 print("How many groups of hundreds?")
 print(integer / 100)
 print("The additive inverse")
-print(-integer)
+print(0 - integer)
 
 
    
